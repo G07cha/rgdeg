@@ -158,3 +158,11 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+.video-block {
+  padding: 50px;
+}
+
+.second-video-block {
+  background-color: #eee;
+}
