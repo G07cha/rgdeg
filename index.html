@@ -15,8 +15,12 @@
 <body>
   <div class="main-page fullscreen">
     <img id="logo-image" src="img/logo_white.png">
-  	<img src="img/google-play-badge.png" href = "#" id="get-on-play-market"></a>
-  	<img src = "img/Download_on_the_App_Store_Badge_US-UK_135x40.png" href = "#" id="get-on-app-store">
+  	<a href="#" onclick="scrollToForm()">
+			<img src="img/google-play-badge.png" id="get-on-play-market">
+		</a>
+  	<a href="#" onclick="scrollToForm()">
+			<img src = "img/Download_on_the_App_Store_Badge_US-UK_135x40.png" id="get-on-app-store">
+		</a>
 	  <video id="video-background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
   		<source src="video/background.mp4" type="video/mp4">
   		Sorry, your browser does not support HTML5 video.
@@ -27,7 +31,7 @@
       <video controls preload="auto" width="100%" >
   		<source src="video/1.mp4" type="video/mp4">
   		Sorry, your browser does not support HTML5 video.
-	  </video> 
+	  </video>
   </div>
   <div class = "second-video-block">
     <div class = "container video-block">
@@ -35,10 +39,10 @@
         <video controls preload="auto" width="100%" >
   		  <source src="video/2.mp4" type="video/mp4">
   		Sorry, your browser does not support HTML5 video.
-	    </video> 
+	    </video>
     </div>
   </div>
-  
+
   <div id = "about-block" class = "container">
     <div class = "content-text"> <h1>TrackChallenge is an app for runners with personality of a real challenger</h1> </div>
     <div class = "row">
