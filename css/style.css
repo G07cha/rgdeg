@@ -1,10 +1,22 @@
+@font-face {
+    font-family: 'Helvetica-Regular';
+    src: url('../fonts/Helvetica-Regular.eot');
+    src: url('../fonts/Helvetica-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Helvetica-Regular.woff') format('woff'),
+         url('../fonts/Helvetica-Regular.ttf') format('truetype'),
+         url('../fonts/Helvetica-Regular.svg#Helvetica-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
   min-width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: black;
+  background-color: #fff;
+  font-family: 'Helvetica-Regular';
 }
 
 #logo-image {
@@ -42,16 +54,28 @@ html, body {
 }
 
 #subscribe-block {
-  background: url('../img/map.png');
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #eee;
+  /*background: url('../img/map.png');*/
+  /*background-position: center center;*/
+  /*background-repeat: no-repeat;*/
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#about-block {
+  background: transparent;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#about-block .col-md-3 {
+  text-align: center;
 }
 
 .subscribe {
   text-align: center;
   width: 100%;
-  padding-bottom: 30px;
 }
 
 .subscribe #email {
@@ -61,7 +85,7 @@ html, body {
   border: none;
   border-bottom: 4px solid #21457c;
   color: #21457c;
-  font: 400 50px 'Oswald';
+  font: 400 50px 'Helvetica-Regular';
   transition: 0.4s ease;
   -o-transition: 0.4s ease;
   -webkit-transition: 0.4s ease;
@@ -82,7 +106,7 @@ html, body {
   border: none;
   padding: 25px 40px;
   cursor: pointer;
-  font: 400 44px 'Oswald';
+  font: 400 44px 'Helvetica-Regular';
   transition: 0.4s ease;
   -o-transition: 0.4s ease;
   -webkit-transition: 0.4s ease;
@@ -99,7 +123,32 @@ input:invalid {
 .content-text {
   position: relative;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 50px;
   text-align: center;
-  font: 36px 'Oswald';
+  font: 36px 'Helvetica-Regular';
+}
+
+.feature-heading {
+  text-transform: none;
+  color: #333;
+  font-size: 22px;
+  margin-top: 5px;
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+.soc {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

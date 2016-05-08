@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Track Challenge</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/social_icons.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon"
       type="image/png"
@@ -12,21 +14,56 @@
 </head>
 <body>
   <div class="main-page fullscreen">
-  	<div id="logo-image"><img src="img/logo_white.png"></div>
+    <div id="logo-image"><img src="img/logo_white.png"></div>
   	<image id="app-store-button" src="img/app_store.png">
-		<video id="video-background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+	  <video id="video-background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
   		<source src="video/background.mp4" type="video/mp4">
   		Sorry, your browser does not support HTML5 video.
-		</video>
+	  </video>
+  </div>
+  <div id = "about-block" class = "container">
+    <div class = "content-text"> <h1>TrackChallenge is an app for runners with personality of real challenger</h1> </div>
+    <div class = "row">
+      <div class = "col-md-3">
+        <img src="img/feature_icon_connect.png">
+        <h4 class = "feature-heading">Connect Friends</h4>
+        <p>Join community of the runners on the same track you run every day and share your progress with friends</p>
+      </div>
+    <div class = "col-md-3">
+        <img src="img/feature_icon_competition.png">
+        <h4 class = "feature-heading">Competition</h4>
+        <p>Challenge your friends or accept challenges from another runners and become the best in your region</p>
+      </div>
+      <div class = "col-md-3">
+        <img src="img/feature_icon_gamification.png">
+        <h4 class = "feature-heading">Gamification</h4>
+        <p>Workout and take your reward: your personal achievements and unique trophys will become a part of history.</p>
+      </div>
+      <div class = "col-md-3">
+        <img src="img/feature_icon_community_tags.png">
+        <h4 class = "feature-heading">Community Tags</h4>
+        <p>Community members are able to tag the tracks: dirt, construcion works or even a pack of hostile dogs.</p>
+      </div>
+    </div>
   </div>
   <div id = "subscribe-block" >
   	<div class = "content-text">
-  		<p>Leave us your email to get notified when app appears in App Store</p>
+  	  <h1>Leave us your email to get notified when app appears in App Store</h1>
   	</div>
   	<div class = "subscribe">
   	  <input id="email" required type="email" placeholder="Email" />
   	  <input type="submit" value="Subscribe" onclick="subscribe()" />
     </div>
   </div>
+  <footer>
+    <div class="container">
+  	  <ul class="soc">
+        <li><a class="soc-facebook" href="#"></a></li>
+        <li><a class="soc-apple" href="#"></a></li>
+        <li><a class="soc-twitter" href="#"></a></li>
+        <li><a class="soc-google soc-icon-last" href="#"></a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
