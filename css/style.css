@@ -23,10 +23,28 @@ html, body {
   position: absolute;
   top: 50px;
   right: 50px;
+  height: 400px;
+  z-index: 2;
+}
+
+#get-on-app-store {
+  position: absolute;
+  top: 400px;
+  right: 300px;
+  width: 195px;
+  z-index: 2;
+}
+
+#get-on-play-market {
+  position: absolute;
+  top: 400px;
+  right: 100px;
+  width: 195px;
   z-index: 2;
 }
 
 .fullscreen {
+  background-color: black;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -34,7 +52,8 @@ html, body {
 
 #video-background {
   vertical-align: middle;
-  min-height: 100%;
+  margin-top: -20%;
+  min-height: 160%;
   min-width: 100%;
   -webkit-filter: blur(20px) brightness(0.7);
   -moz-filter: blur(20px) brightness(0.7);
@@ -43,21 +62,8 @@ html, body {
   filter: blur(20px) brightness(0.7);
 }
 
-#app-store-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  width: 300px;
-  height: 100px;
-  margin-left: -150px;
-  z-index: 2;
-}
-
 #subscribe-block {
   background-color: #eee;
-  /*background: url('../img/map.png');*/
-  /*background-position: center center;*/
-  /*background-repeat: no-repeat;*/
   width: 100%;
   padding-top: 50px;
   padding-bottom: 100px;
